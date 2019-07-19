@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentSpotifyApi" Version="1.4.0" />
+    <PackageReference Include="FluentSpotifyApi.AuthorizationFlows.AspNetCore" Version="1.4.0" />
+    <PackageReference Include="FluentSpotifyApi.Core" Version="1.4.0" />
+    <PackageReference Include="GraphiQL" Version="1.2.0" />
+    <PackageReference Include="GraphQL" Version="2.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="3.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="3.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Extensions.DependencyInjection">
+      <HintPath>..\Lib\Sitecore\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Kernel">
+      <HintPath>..\Lib\Sitecore\Sitecore.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Services.Core">
+      <HintPath>..\Lib\Sitecore\Sitecore.Services.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Services.GraphQL">
+      <HintPath>..\Lib\Sitecore\Sitecore.Services.GraphQL.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
